@@ -9,7 +9,8 @@
 			"entry.h": "c",
 			"stdio.h": "c",
 			"stdlib.h": "c",
-			"onix_crt_entry.h": "c"
+			"onix_crt_entry.h": "c",
+			"string.h": "c",
 		}
 	}
 }

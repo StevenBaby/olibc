@@ -1,5 +1,6 @@
 BUILD:=./build
 
+# DEBUG:=
 DEBUG:=-g 
 INCLUDE:= -I ./src
 CFLAGS:=  -m32 -fno-builtin -fno-stack-protector \
@@ -16,6 +17,7 @@ endef
 
 LIB_OBJECTS:=  	$(BUILD)/stdio.o \
 				$(BUILD)/stdlib.o \
+				$(BUILD)/string.o \
 
 all: main lib
 	-

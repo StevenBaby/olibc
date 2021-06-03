@@ -4,7 +4,8 @@
 */
 
 #ifndef ONIX_STDLIB_H
+#define ONIX_STDLIB_H
 
-void exit(int status);
+extern void exit(int status);
 
 #endif

@@ -4,7 +4,8 @@
 */
 
 #ifndef ONIX_ENTRY_H
+#define ONIX_ENTRY_H
 
-void onix_crt_entry();
+extern void onix_crt_entry();
 
 #endif

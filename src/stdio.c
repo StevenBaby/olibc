@@ -4,6 +4,7 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 
 int printf(const char *format, ...)
 {
@@ -15,6 +16,6 @@ int printf(const char *format, ...)
     // mov edx, length;
     asm("int $0x80 \n"
         : "=a"(ret)
-        : "a"(4), "b"(1), "c"(format), "d"(sizeof(format)));
+        : "a"(4), "b"(1), "c"(format), "d"(strlen(format)));
     return ret;
 }

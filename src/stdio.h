@@ -4,7 +4,8 @@
 */
 
 #ifndef ONIX_STDIO_H
+#define ONIX_STDIO_H
 
-int printf(const char *format, ...);
+extern int printf(const char *format, ...);
 
 #endif
