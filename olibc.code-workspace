@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+	"settings": {
+		"files.associations": {
+			"entry.h": "c",
+			"stdio.h": "c",
+			"stdlib.h": "c",
+			"onix_crt_entry.h": "c"
+		}
+	}
+}
