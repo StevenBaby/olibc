@@ -3,7 +3,7 @@
 * @date: 2021-06-03
 */
 
-#include <onix_crt_entry.h>
+#include <crt.h>
 #include <stdlib.h>
 
 extern int main(int argc, char const *argv[]);

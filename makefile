@@ -22,7 +22,7 @@ LIB_OBJECTS:=  	$(BUILD)/stdio.o \
 all: main lib
 	-
 
-main: $(BUILD)/main.o $(BUILD)/onix_crt_entry.o $(BUILD)/olibc.a 
+main: $(BUILD)/main.o $(BUILD)/crt.o $(BUILD)/olibc.a 
 	$(CC) $(CFLAGS) $(DEBUG) -e onix_crt_entry $^ -o $@
 
 lib: $(BUILD)/olibc.a

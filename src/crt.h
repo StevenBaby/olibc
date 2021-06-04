@@ -3,8 +3,8 @@
 * @date: 2021-06-03
 */
 
-#ifndef ONIX_ENTRY_H
-#define ONIX_ENTRY_H
+#ifndef ONIX_CRT_H
+#define ONIX_CRT_H
 
 extern void onix_crt_entry();
 
