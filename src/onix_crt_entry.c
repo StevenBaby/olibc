@@ -6,10 +6,17 @@
 #include <onix_crt_entry.h>
 #include <stdlib.h>
 
-extern int main();
+extern int main(int argc, char const *argv[]);
 
 void onix_crt_entry()
 {
-    int ret = main();
+    char *ebp = 0;
+    asm volatile("movl %%ebp, %0 \n"
+                 : "=r"(ebp));
+
+    int argc = *(int *)(ebp + 4);
+    const char **argv = (const char **)(ebp + 8);
+
+    int ret = main(argc, argv);
     exit(ret);
 }
