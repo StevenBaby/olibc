@@ -13,5 +13,6 @@ test the library
 int main(int argc, char const *argv[])
 {
     printf("hello world!!!\n");
+    printf("This is a number %d, and a hex 0x%X\n", 10, 0x12345678);
     return 0;
 }
